@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		DDAF4D9C2242D13200672F74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF4D9B2242D13200672F74 /* AppDelegate.swift */; };
-		DDAF4D9E2242D13200672F74 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF4D9D2242D13200672F74 /* ViewController.swift */; };
 		DDAF4DA12242D13200672F74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAF4D9F2242D13200672F74 /* Main.storyboard */; };
 		DDAF4DA32242D13700672F74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDAF4DA22242D13700672F74 /* Assets.xcassets */; };
 		DDAF4DA62242D13700672F74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDAF4DA42242D13700672F74 /* LaunchScreen.storyboard */; };
+		DDAF4DB52242D3C200672F74 /* Why.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF4DB42242D3C200672F74 /* Why.swift */; };
+		DDAF4DB72242D74700672F74 /* WhyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF4DB62242D74700672F74 /* WhyController.swift */; };
+		DDAF4DB92242E14D00672F74 /* WhyCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF4DB82242E14D00672F74 /* WhyCustomTableViewCell.swift */; };
+		DDAF4DBB2242E32600672F74 /* WhyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAF4DBA2242E32600672F74 /* WhyListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDAF4D982242D13200672F74 /* Why iOS?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Why iOS?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDAF4D9B2242D13200672F74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DDAF4D9D2242D13200672F74 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDAF4DA02242D13200672F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDAF4DA22242D13700672F74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDAF4DA52242D13700672F74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDAF4DA72242D13700672F74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDAF4DB42242D3C200672F74 /* Why.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Why.swift; sourceTree = "<group>"; };
+		DDAF4DB62242D74700672F74 /* WhyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyController.swift; sourceTree = "<group>"; };
+		DDAF4DB82242E14D00672F74 /* WhyCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyCustomTableViewCell.swift; sourceTree = "<group>"; };
+		DDAF4DBA2242E32600672F74 /* WhyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,65 @@
 		DDAF4D9A2242D13200672F74 /* Why iOS? */ = {
 			isa = PBXGroup;
 			children = (
-				DDAF4D9B2242D13200672F74 /* AppDelegate.swift */,
-				DDAF4D9D2242D13200672F74 /* ViewController.swift */,
+				DDAF4DB32242D23700672F74 /* Resources */,
+				DDAF4DB12242D21100672F74 /* Storyboards */,
+				DDAF4DB02242D20A00672F74 /* Views */,
+				DDAF4DAF2242D20000672F74 /* ModelControllers */,
+				DDAF4DAE2242D1F600672F74 /* Controllers */,
+				DDAF4DAD2242D14300672F74 /* Model */,
+			);
+			path = "Why iOS?";
+			sourceTree = "<group>";
+		};
+		DDAF4DAD2242D14300672F74 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDAF4DAE2242D1F600672F74 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF4DBA2242E32600672F74 /* WhyListTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DDAF4DAF2242D20000672F74 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF4DB62242D74700672F74 /* WhyController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		DDAF4DB02242D20A00672F74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF4DB82242E14D00672F74 /* WhyCustomTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DDAF4DB12242D21100672F74 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				DDAF4D9F2242D13200672F74 /* Main.storyboard */,
+				DDAF4DB42242D3C200672F74 /* Why.swift */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		DDAF4DB32242D23700672F74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDAF4D9B2242D13200672F74 /* AppDelegate.swift */,
 				DDAF4DA22242D13700672F74 /* Assets.xcassets */,
 				DDAF4DA42242D13700672F74 /* LaunchScreen.storyboard */,
 				DDAF4DA72242D13700672F74 /* Info.plist */,
 			);
-			path = "Why iOS?";
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDAF4D9E2242D13200672F74 /* ViewController.swift in Sources */,
+				DDAF4DBB2242E32600672F74 /* WhyListTableViewController.swift in Sources */,
+				DDAF4DB52242D3C200672F74 /* Why.swift in Sources */,
+				DDAF4DB92242E14D00672F74 /* WhyCustomTableViewCell.swift in Sources */,
+				DDAF4DB72242D74700672F74 /* WhyController.swift in Sources */,
 				DDAF4D9C2242D13200672F74 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UWK99QK89X;
-				INFOPLIST_FILE = "Why iOS?/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Why iOS?/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UWK99QK89X;
-				INFOPLIST_FILE = "Why iOS?/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Why iOS?/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
